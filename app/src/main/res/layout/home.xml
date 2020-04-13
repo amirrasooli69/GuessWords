@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5fb6f9"
+    tools:context=".Home"
+    android:layoutDirection="rtl">
+
+
+    <Button
+        android:id="@+id/hPlayButt2"
+        android:layout_width="120dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/hBestTxt"
+        android:layout_marginTop="220dp"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/share_butt"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        app:srcCompat="@drawable/logo_home" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/bestHome"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hBestTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="213dp"
+        android:text="00"
+        android:textColor="#fff"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/hPlayButt"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/hBestTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/play_butt"
+        />
+
+    <Button
+        android:id="@+id/btnrate"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@+id/hPlayButt"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_corner_green"
+        android:text="نظر دادن"
+        android:textSize="18sp" />
+
+</RelativeLayout>

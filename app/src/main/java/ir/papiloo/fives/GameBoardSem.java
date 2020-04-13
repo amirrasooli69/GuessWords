@@ -42,7 +42,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 public class GameBoardSem extends AppCompatActivity implements View.OnClickListener {
 
     /* Views */
-    TextView sTitleTxt, scoreTxt, letter1, letter2, letter3, letter4, letter5;
+    TextView sTitleTxt, scoreTxt, letter1, letter2, letter3, letter4, letter5,possibleWordTxt;
     ProgressBar pb;
     Button letterButt1, letterButt2, letterButt3, letterButt4, letterButt5;
 
@@ -95,6 +95,7 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
 
         // Get a random word from words string-array
         getRandomWord();
+
     }
 
 
@@ -122,6 +123,7 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
         String [] wordsArr = getResources().getStringArray(R.array.WordsSem);
         wordsArray = new ArrayList<String>(Arrays.asList(wordsArr));
         // Log.i("log-", "WORDS ARRAY: " + wordsArray);
+
 
 
         // Init Views
@@ -252,13 +254,23 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
         wordStr = randomWord;
         Log.i("log-", "RANDOM WORD: " + wordStr);
 
+        possibleWordTxt = (TextView)findViewById(R.id.goPossibleWordTxt);
+        possibleWordTxt.setTypeface(Configs.juneGull);
 
         // Get an array of words (if there are multiple words
         Configs.stringsArray = new ArrayList<String>();
 
         if (wordStr.contains(".")) {
             String[] one = wordStr.split(Pattern.quote("."));
-            for (String word : one) { Configs.stringsArray.add(word); }
+            for (String word : one) {
+                Configs.stringsArray.add(word);
+                possibleWordTxt.setText(one[0]);
+
+
+
+            }
+
+
             Log.i("log-", "\n\nWORDS ARRAY: " + Configs.stringsArray);
 
         } else {

@@ -42,7 +42,8 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 public class GameBoardSem extends AppCompatActivity implements View.OnClickListener {
 
     /* Views */
-    TextView sTitleTxt, scoreTxt, letter1, letter2, letter3, letter4, letter5,possibleWordTxt;
+    TextView sTitleTxt, scoreTxt, letter1, letter2, letter3, letter4, letter5,possibleWordTxt,
+            txtHint,btnHint,btnDelete;
     ProgressBar pb;
     Button letterButt1, letterButt2, letterButt3, letterButt4, letterButt5;
 
@@ -181,8 +182,9 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
 
 
         // MARK: - RESET BUTTON ------------------------------------
-        Button resetButt = (Button)findViewById(R.id.gbResetButt);
-        resetButt.setOnClickListener(new View.OnClickListener() {
+        //Button resetButt = (Button)findViewById(R.id.gbResetButt);
+        Button resetText =(Button) findViewById(R.id.btnDelete);
+        resetText.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
               resetWord();
@@ -264,7 +266,11 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
             String[] one = wordStr.split(Pattern.quote("."));
             for (String word : one) {
                 Configs.stringsArray.add(word);
-                possibleWordTxt.setText(one[1]+" = "+one[2]);
+                possibleWordTxt.setText(one[2]);
+//                if(btnHint.isPressed()) {
+//                    txtHint.setText(one[1]);
+//                    progress=progress+5;
+//                }
 
 
 

@@ -169,7 +169,7 @@ public class GameBoardFa extends AppCompatActivity implements View.OnClickListen
 
 
         // MARK: - RESET BUTTON ------------------------------------
-        Button resetButt = (Button)findViewById(R.id.gbResetButt);
+        Button resetButt = (Button)findViewById(R.id.btnDelete);
         resetButt.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {

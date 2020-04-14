@@ -264,7 +264,7 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
             String[] one = wordStr.split(Pattern.quote("."));
             for (String word : one) {
                 Configs.stringsArray.add(word);
-                possibleWordTxt.setText(one[0]);
+                possibleWordTxt.setText(one[1]+" = "+one[2]);
 
 
 
@@ -457,7 +457,8 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
                 wordByCharacters.matches(thirdWord) ) {
 
             // Play a sound
-            playSound("rightWord.mp3");
+            playSound("AfarnGolam.mp3");
+            //playSound("rightWord.mp3");
 
 
             // Update game timer

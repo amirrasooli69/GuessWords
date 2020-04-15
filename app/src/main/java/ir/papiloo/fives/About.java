@@ -12,7 +12,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class About extends AppCompatActivity {
 
-    private static int splashInterval = 3000;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,20 +21,10 @@ public class About extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.splash_screen);
+        setContentView(R.layout.about);
 
-        new Handler().postDelayed(new Runnable() {
 
-            @Override
-            public void run() {
-                Intent i = new Intent(About.this, Home.class);
-                startActivity(i);
-                this.finish();
-            }
 
-            private void finish() {
-            }
-        }, splashInterval);
 
     };
     @Override

@@ -34,7 +34,7 @@ public class GameBoardFa extends AppCompatActivity implements View.OnClickListen
     /* Views */
     TextView sTitleTxt, scoreTxt, letter1, letter2, letter3, letter4, letter5;
     ProgressBar pb;
-    Button letterButt1, letterButt2, letterButt3, letterButt4, letterButt5;
+    Button letterButt1, letterButt2, letterButt3, letterButt4, letterButt5 ,btnHint;
 
 
 
@@ -146,6 +146,9 @@ public class GameBoardFa extends AppCompatActivity implements View.OnClickListen
         letterButt5 = (Button)findViewById(R.id.letterButt5);
         letterButt5.setTypeface(Configs.juneGull);
         letterButt5.setOnClickListener(this);
+        //----------
+        Button btnHint=(Button)findViewById(R.id.btnHint);
+        btnHint.setVisibility(View.GONE); // GONE = be soorate kamel barmidarad,INVISIBL = faghat makhfi mikonad
 
         // Make an array of letter buttons
         letterButtons = new Button[5];

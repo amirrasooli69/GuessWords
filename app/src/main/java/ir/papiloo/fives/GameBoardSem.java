@@ -47,7 +47,7 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
     TextView sTitleTxt, scoreTxt, letter1, letter2, letter3, letter4, letter5,possibleWordTxt,
             txtHint;
     ProgressBar pb;
-    Button letterButt1, letterButt2, letterButt3, letterButt4, letterButt5,btn ;
+    Button letterButt1, letterButt2, letterButt3, letterButt4, letterButt5,BtnHint ;
 
 
 
@@ -175,7 +175,7 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
         letterButt5.setOnClickListener(this);
 
         //-------
-        btn= (Button) findViewById(R.id.btnHint);
+        BtnHint= (Button) findViewById(R.id.btnHint);
 
 
 

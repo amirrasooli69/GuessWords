@@ -68,19 +68,26 @@ public class Home extends AppCompatActivity {
 
         // MARK: - PLAY BUTTON ------------------------------------
         Button playFa = (Button)findViewById(R.id.hPlayButt);
-        Button playSem = (Button)findViewById(R.id.hPlayButt2);
+        Button playSem = (Button)findViewById(R.id.btnSemnani);
+        Button playSan = (Button)findViewById(R.id.btnSangesari);
         playFa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 startActivity(new Intent(Home.this, GameBoardFa.class));
             }});
-
+        //**************
         playSem.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
               startActivity(new Intent(Home.this, GameBoardSem.class));
         }});
+        //**************
+        playSan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Home.this, GameBoardSan.class));
+            }});
 
 
 

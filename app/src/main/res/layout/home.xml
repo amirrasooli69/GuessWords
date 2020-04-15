@@ -12,13 +12,13 @@
 
 
     <Button
-        android:id="@+id/hPlayButt2"
+        android:id="@+id/btnSemnani"
         android:layout_marginRight="40dp"
         android:layout_width="wrap_content"
         android:layout_height="54dp"
         android:layout_below="@+id/hBestTxt"
         android:layout_marginTop="50dp"
-        android:background="@drawable/circle_corner_green"
+        android:background="@drawable/circle_corner_yelow"
 
         android:text="سمنانی"
         android:textColor="#E33030"
@@ -66,9 +66,22 @@
         android:layout_below="@+id/hBestTxt"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:background="#FFEB3B"
+        android:background="@drawable/circle_corner_yelow"
 
         android:text="فارسی"
+        android:textSize="25sp"
+        android:textColor="#FFE33030"
+        />
+    <Button
+        android:id="@+id/btnSangesari"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_below="@+id/hBestTxt"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="270dp"
+        android:background="@drawable/circle_corner_yelow"
+
+        android:text="سنگسری"
         android:textSize="25sp"
         android:textColor="#FFE33030"
         />

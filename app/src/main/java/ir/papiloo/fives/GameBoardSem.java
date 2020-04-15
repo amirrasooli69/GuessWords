@@ -488,7 +488,7 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
                 wordByCharacters.matches(thirdWord) ) {
 
             // Play a sound
-            playSound("AfarnGolam.mp3");
+            playSound("rightWord.mp3");
             //playSound("rightWord.mp3");
 
 

@@ -40,7 +40,7 @@ import java.util.regex.Pattern;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
-public class GameBoardSem extends AppCompatActivity implements View.OnClickListener{
+public class GameBoardMaz extends AppCompatActivity implements View.OnClickListener{
 
 
     /* Views */
@@ -133,7 +133,7 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
 
         // Get a List array of words
 
-        String [] wordsArr = getResources().getStringArray(R.array.WordsSem);
+        String [] wordsArr = getResources().getStringArray(R.array.WordsSan);
         wordsArray = new ArrayList<String>(Arrays.asList(wordsArr));
         // Log.i("log-", "WORDS ARRAY: " + wordsArray);
 
@@ -523,7 +523,7 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
     // MARK: - GAME OVER ------------------------------------------------------------
     void gameOver() {
         // Get bestScore
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(GameBoardSem.this);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(GameBoardMaz.this);
         Configs.bestScore = prefs.getInt("bestScore", Configs.bestScore);
 
         // Save Best Score
@@ -536,7 +536,7 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
         playSound("gameOver.mp3");
 
         // Go to Game Over Activity
-        startActivity(new Intent(GameBoardSem.this, GameOver.class));
+        startActivity(new Intent(GameBoardMaz.this, GameOver.class));
     }
 
 

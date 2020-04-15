@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     buildToolsVersion '29.0.3'
     defaultConfig {
-        applicationId "com.domain.fives"
+        applicationId "ir.papiloo.fives"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1

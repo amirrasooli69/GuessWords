@@ -100,20 +100,69 @@
         <item>كالكه.كالكه.خربزه نارس</item>
         <item>شيلكه.شيلّكه.زردآلو</item>
         <item>ونگون.ونگُون.بادمجان</item>
-
-
-
-    </string-array>
-    <string-array name="WordsSan">
-        <item>تست11.تست12.تست13</item>
-        <item>تست21.تست22.تست23</item>
-        <item>تست31.تست32.تست33</item>
-        <item>تست41.تست42.تست43</item>
     </string-array>
 
+  <string-array name="WordsSan">
+      <item>لیوون.livun.لیوان</item>
+      <item>لنگری.lengari.سینی</item>
+      <item>لوبار.lowbār.کناررودخانه</item>
+      <item>ژرژتن.jegādār.بالازدن</item>
+      <item>ژرتکی.žortaki.روبه بالا</item>
+      <item>زوکله.zukele.چابک</item>
+      <item>یرماز.yaramāz.شیک پوش</item>
+      <item>خرقوش.kharghush.خرگوش</item>
+      <item>خاشال.khaashaal.خوشحال</item>
+      <item>خردیم.khordim.روبه آفتاب</item>
+      <item>خورتو.khortow.پرتو آفتاب</item>
+      <item>خونده.khunde.دور</item>
+      <item>خوراک.khuraak.غذا</item>
+      <item>خوسنه.khussene.چاق</item>
+      <item>وادبه.vaadebe.وارفته</item>
+      <item>ولدوم.valdum.کژدم</item>
+      <item>ورتکی.vartaki.افقی</item>
+      <item>ورزری.varzeri.کشاورزی</item>
+      <item>واخپر.vaakhpar.احتیاط</item>
+      <item>واژار.vaazhaar.بازار</item>
+      <item>وجنوه.vejeneve.بیحوصله</item>
+      <item>ولرده.velarde.گسترده</item>
+      <item>ونگوم.vengum.بادمجان</item>
+      <item>وپرتن.veparetan.رنگ پریدن</item>
+      <item>وستتن.vesatetan.سنجیدن</item>
+      <item>ویکار.vikaar.بیکار</item>
+      <item>ویمور.vimor.بیمار</item>
+      <item>اومید.umid.امید</item>
+      <item>تلدار.taldaar.باردار</item>
+      <item>تنورد.tanevard.مجاورت</item>
+      <item>تااوس.taaoos.طاووس</item>
+      <item>تپلکه.taplake.تپل</item>
+      <item>ترسوک.tarsuk.ترسو</item>
+      <item>تشولی.tashevoli.زیرشلواری</item>
+      <item>تخسیر.takhsir.تقصیر</item>
+      <item>تاژگی.taazhegi.تازگی</item>
+      <item>تلکون.telokun.ملخ</item>
+      <item>تنافت.tanaaft.طناب</item>
+      <item>تیرمو.tirmo.ماه هشتم سال</item>
+      <item>تشمیر.toshmir.خمیر ترش</item>
+      <item>تونکه.tunake.شورت</item>
+      <item>سگیرا.sagiraa.چادر سنگسری</item>
+      <item>سالمو.saalemo.سالنامه</item>
+      <item>سامون.saamun.مرز</item>
+      <item>سرنسر.saransar.هم رده</item>
+      <item>سامون.saamun.مرز</item>
+      <item>سرژیر.sarzhir.سر پائین</item>
+      <item>شاخیش.shaakhish.خانواده پادشاهی</item>
+      <item>شکیین.shekein.زن</item>
+      <item>شیوار.shivaar.دره</item>
+      <item>شورگه.shurge.غسال خانه</item>
 
 
-    <!-- ENGLISH DEFAULT TRANSLATIONS -->
+
+
+
+
+
+  </string-array>
+
     <string name="bestHome">بهترین رکورد</string>
 
     <string name="share1">رکورد من در بازی "پنج حرفی پاپیلو" :</string>

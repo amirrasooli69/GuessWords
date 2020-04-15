@@ -255,8 +255,8 @@
             android:id="@+id/txtHint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="320dp"
+            android:layout_marginRight="300dp"
             android:textColor="#1B9820"
             android:textSize="36sp"
             android:textStyle="bold" />

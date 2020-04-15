@@ -53,6 +53,7 @@ public class GameBoardFa extends AppCompatActivity implements View.OnClickListen
     Button [] letterButtons;
     TextView [] letterTxts;
     MediaPlayer mp;
+    String hint;
 
 
 
@@ -248,7 +249,10 @@ public class GameBoardFa extends AppCompatActivity implements View.OnClickListen
 
         if (wordStr.contains(".")) {
             String[] one = wordStr.split(Pattern.quote("."));
-            for (String word : one) { Configs.stringsArray.add(word); }
+            for (String word : one) {
+                Configs.stringsArray.add(word);
+                hint=one[0];
+            }
             Log.i("log-", "\n\nWORDS ARRAY: " + Configs.stringsArray);
 
         } else {
@@ -524,4 +528,7 @@ public class GameBoardFa extends AppCompatActivity implements View.OnClickListen
     }
 
 
+    public void btnHintClick(View view) {
+
+    }
 }// @end

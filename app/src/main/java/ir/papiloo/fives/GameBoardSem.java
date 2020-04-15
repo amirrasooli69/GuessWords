@@ -13,6 +13,7 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,13 +40,14 @@ import java.util.regex.Pattern;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
-public class GameBoardSem extends AppCompatActivity implements View.OnClickListener {
+public class GameBoardSem extends AppCompatActivity implements View.OnClickListener{
+
 
     /* Views */
     TextView sTitleTxt, scoreTxt, letter1, letter2, letter3, letter4, letter5,possibleWordTxt,
-            txtHint,btnHint,btnDelete;
+            txtHint;
     ProgressBar pb;
-    Button letterButt1, letterButt2, letterButt3, letterButt4, letterButt5;
+    Button letterButt1, letterButt2, letterButt3, letterButt4, letterButt5,btn ;
 
 
 
@@ -64,6 +66,8 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
     Button [] letterButtons;
     TextView [] letterTxts;
     MediaPlayer mp;
+    String hint="";
+
 
 
 
@@ -97,11 +101,19 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
         // Get a random word from words string-array
         getRandomWord();
 
+
     }
 
 
 
-
+    // Event Click btnHintDelete() ------------------------------------------------------------------------
+        public void btnHintClick(View view)
+        {
+            if(view.getId()==R.id.btnHint)
+            {
+                txtHint.setText(hint);
+            }
+        }
 
     // ON CREATE() ---------------------------------------------------------------
     @Override
@@ -142,6 +154,9 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
         letter4.setTypeface(Configs.juneGull);
         letter5 = (TextView)findViewById(R.id.letter5);
         letter5.setTypeface(Configs.juneGull);
+        //------
+        txtHint=(TextView) findViewById(R.id.txtHint);
+        //------
 
         letterButt1 = (Button)findViewById(R.id.letterButt1);
         letterButt1.setTypeface(Configs.juneGull);
@@ -158,6 +173,11 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
         letterButt5 = (Button)findViewById(R.id.letterButt5);
         letterButt5.setTypeface(Configs.juneGull);
         letterButt5.setOnClickListener(this);
+
+        //-------
+        btn= (Button) findViewById(R.id.btnHint);
+
+
 
         // Make an array of letter buttons
         letterButtons = new Button[5];
@@ -244,6 +264,8 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
 
     // MARK: - GET A RANDOM WORD ------------------------------------------------------------
     void getRandomWord() {
+        //Clear text Hint
+        txtHint.setText("");
 
         // Get a random circle for letters
         Random r = new Random();
@@ -267,6 +289,9 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
             for (String word : one) {
                 Configs.stringsArray.add(word);
                 possibleWordTxt.setText(one[2]);
+                hint=one[1];
+                //txtHint.setText(one[1]);
+
 //                if(btnHint.isPressed()) {
 //                    txtHint.setText(one[1]);
 //                    progress=progress+5;
@@ -551,6 +576,7 @@ public class GameBoardSem extends AppCompatActivity implements View.OnClickListe
         super.onDestroy();
         gameTimer.cancel();
     }
+
 
 
 }// @end

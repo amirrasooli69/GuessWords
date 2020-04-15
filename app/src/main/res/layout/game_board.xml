@@ -22,7 +22,7 @@
         android:textAllCaps="false"
         android:textColor="@android:color/background_dark"
         android:textSize="25sp"
-
+        android:onClick="btnHintClick"
         />
 
     <Button
@@ -233,6 +233,7 @@
             android:textAllCaps="false"
             android:textColor="@android:color/background_dark"
             android:textSize="25sp"
+            android:onClick="btnHintClick"
 
             />
 

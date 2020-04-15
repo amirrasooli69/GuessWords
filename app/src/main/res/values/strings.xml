@@ -104,6 +104,12 @@
 
 
     </string-array>
+    <string-array name="WordsSan">
+        <item>تست11.تست12.تست13</item>
+        <item>تست21.تست22.تست23</item>
+        <item>تست31.تست32.تست33</item>
+        <item>تست41.تست42.تست43</item>
+    </string-array>
 
 
 

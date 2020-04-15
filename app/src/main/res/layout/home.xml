@@ -78,7 +78,7 @@
         android:layout_height="54dp"
         android:layout_below="@+id/hBestTxt"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="270dp"
+        android:layout_marginRight="232dp"
         android:background="@drawable/circle_corner_yelow"
 
         android:text="سنگسری"

@@ -71,6 +71,7 @@ public class Home extends AppCompatActivity {
         Button playSem = (Button)findViewById(R.id.btnSemnani);
         Button playSan = (Button)findViewById(R.id.btnSangesari);
         Button playMaz = (Button)findViewById(R.id.btnMazani);
+        Button btnAbout = (Button)findViewById(R.id.btnAbout);
         playFa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -95,6 +96,13 @@ public class Home extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(Home.this, GameBoardMaz.class));
             }});
+        //**************
+        btnAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Home.this, About.class));
+            }});
+
 
 
 
@@ -113,7 +121,6 @@ public class Home extends AppCompatActivity {
               startActivity(intent);
 
           }});
-
 
 
 

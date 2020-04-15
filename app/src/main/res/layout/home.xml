@@ -6,7 +6,7 @@
     android:id="@+id/hLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5fb6f9"
+    android:background="#52AFED"
     tools:context=".Home"
     android:layoutDirection="rtl">
 
@@ -106,12 +106,23 @@
         android:id="@+id/btnrate"
         android:layout_width="140dp"
         android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginRight="30dp"
 
         android:layout_below="@+id/hPlayButt"
         android:layout_marginTop="100dp"
         android:background="@drawable/circle_corner_green"
         android:text="نظر دادن"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:layout_marginRight="190dp"
+
+        android:layout_below="@+id/hPlayButt"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/circle_corner_green"
+        android:text="درباره ما"
         android:textSize="18sp" />
 
 </RelativeLayout>

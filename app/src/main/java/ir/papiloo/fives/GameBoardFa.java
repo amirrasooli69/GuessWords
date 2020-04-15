@@ -34,7 +34,7 @@ public class GameBoardFa extends AppCompatActivity implements View.OnClickListen
     /* Views */
     TextView sTitleTxt, scoreTxt, letter1, letter2, letter3, letter4, letter5;
     ProgressBar pb;
-    Button letterButt1, letterButt2, letterButt3, letterButt4, letterButt5 ,btnHint;
+    Button letterButt1, letterButt2, letterButt3, letterButt4, letterButt5;
 
 
 

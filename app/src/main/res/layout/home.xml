@@ -13,14 +13,16 @@
 
     <Button
         android:id="@+id/hPlayButt2"
-        android:layout_width="120dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="wrap_content"
         android:layout_height="54dp"
         android:layout_below="@+id/hBestTxt"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circle_corner_green"
 
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/share_butt"
-        />
+        android:text="سمنانی"
+        android:textColor="#E33030"
+        android:textSize="25sp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -30,7 +32,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="75dp"
-        app:srcCompat="@drawable/logo_home" />
+        app:srcCompat="@drawable/logo_home"
+        />
 
     <TextView
         android:id="@+id/textView"
@@ -58,13 +61,20 @@
 
     <Button
         android:id="@+id/hPlayButt"
-        android:layout_width="140dp"
+        android:layout_width="wrap_content"
         android:layout_height="54dp"
         android:layout_below="@+id/hBestTxt"
+        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="74dp"
-        android:background="@drawable/play_butt"
+        android:background="#FFEB3B"
+
+        android:text="فارسی"
+        android:textSize="25sp"
+        android:textColor="#FFE33030"
         />
+<!--        android:background="@drawable/play_butt"
+        android:background="#FFEB3B" -->
+
 
     <Button
         android:id="@+id/btnrate"
@@ -73,7 +83,7 @@
         android:layout_centerHorizontal="true"
 
         android:layout_below="@+id/hPlayButt"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/circle_corner_green"
         android:text="نظر دادن"
         android:textSize="18sp" />

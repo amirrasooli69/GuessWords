@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#52AFED"
+    android:background="#9D88C1"
     tools:context=".GameBoardFa"
     android:layoutDirection="rtl">
 
@@ -252,9 +252,8 @@
             android:layout_height="66dp"
             android:layout_marginTop="320dp"
             android:layout_marginRight="5dp"
-            android:background="@drawable/circle_corner_blue"
+            android:background="@drawable/ico_help"
             android:onClick="btnHintClick"
-            android:text="راهنمایی"
             android:textAllCaps="false"
             android:textColor="@android:color/background_dark"
             android:textSize="25sp"

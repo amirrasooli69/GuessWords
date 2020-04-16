@@ -67,11 +67,12 @@ public class Home extends AppCompatActivity {
 
 
         // MARK: - PLAY BUTTON ------------------------------------
-        Button playFa = (Button)findViewById(R.id.hPlayButt);
+        Button playFa = (Button)findViewById(R.id.btnFa);
         Button playSem = (Button)findViewById(R.id.btnSemnani);
         Button playSan = (Button)findViewById(R.id.btnSangesari);
         Button playMaz = (Button)findViewById(R.id.btnMazani);
         Button btnAbout = (Button)findViewById(R.id.btnAbout);
+        //**************
         playFa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

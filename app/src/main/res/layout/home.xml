@@ -6,33 +6,37 @@
     android:id="@+id/hLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#52AFED"
+    android:background="#F3F2ED"
     tools:context=".Home"
     android:layoutDirection="rtl">
 
 
     <Button
         android:id="@+id/btnMazani"
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
         android:layout_below="@+id/hBestTxt"
         android:layout_marginTop="120dp"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/circle_corner_yelow"
+        android:background="@drawable/ico_maz"
 
-        android:text="مازندرانی"
         android:textColor="#E33030"
         android:textSize="25sp" />
 
     <Button
         android:id="@+id/btnSemnani"
-        android:layout_marginRight="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
         android:layout_below="@+id/hBestTxt"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/circle_corner_yelow"
 
+        android:layout_marginTop="50dp"
+
+        android:layout_toStartOf="@+id/hPlayButt"
+        android:layout_marginLeft="20dp"
+
+
+
+        android:background="@drawable/ico_sem"
         android:text="سمنانی"
         android:textColor="#E33030"
         android:textSize="25sp" />
@@ -57,7 +61,7 @@
         android:layout_marginTop="25dp"
         android:text="@string/bestHome"
         android:textAllCaps="true"
-        android:textColor="#fff"
+        android:textColor="#673AB7"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -69,60 +73,63 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="213dp"
         android:text="00"
-        android:textColor="#fff"
+        android:textColor="#673AB7"
         android:textSize="32sp" />
 
     <Button
         android:id="@+id/hPlayButt"
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
         android:layout_below="@+id/hBestTxt"
-        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/circle_corner_yelow"
-
-        android:text="فارسی"
-        android:textSize="25sp"
-        android:textColor="#FFE33030"
-        />
-    <Button
-        android:id="@+id/btnSangesari"
-        android:layout_width="wrap_content"
-        android:layout_height="54dp"
-        android:layout_below="@+id/hBestTxt"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="232dp"
-        android:background="@drawable/circle_corner_yelow"
+        android:background="@drawable/ico_fa"
 
-        android:text="سنگسری"
-        android:textSize="25sp"
         android:textColor="#FFE33030"
-        />
-<!--        android:background="@drawable/play_butt"
+        android:textSize="25sp" />
+    <!--        android:background="@drawable/play_butt"
         android:background="#FFEB3B" -->
 
+
+    <Button
+        android:id="@+id/btnSangesari"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/hBestTxt"
+        android:layout_marginTop="50dp"
+        android:layout_toStartOf="@+id/hPlayButt"
+
+        android:layout_marginLeft="-200dp"
+
+        android:background="@drawable/ico_san"
+        android:textColor="#FFE33030"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/btnrate"
         android:layout_width="140dp"
         android:layout_height="54dp"
-        android:layout_marginRight="30dp"
-
-        android:layout_below="@+id/hPlayButt"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/circle_corner_green"
+        android:layout_below="@+id/hBestTxt"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/ico_idea"
         android:text="نظر دادن"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_toStartOf="@+id/hPlayButt"
+        android:layout_marginLeft="0dp"/>
+
     <Button
         android:id="@+id/btnAbout"
         android:layout_width="140dp"
         android:layout_height="54dp"
-        android:layout_marginRight="190dp"
-
-        android:layout_below="@+id/hPlayButt"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/circle_corner_green"
+        android:layout_below="@+id/hBestTxt"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/ico_about"
         android:text="درباره ما"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_toStartOf="@+id/hPlayButt"
+        android:layout_marginLeft="-220dp"
+
+
+        />
 
 </RelativeLayout>

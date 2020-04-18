@@ -517,9 +517,6 @@ public class GameBoardSan extends AppCompatActivity implements View.OnClickListe
     }
 
 
-
-
-
     // MARK: - GAME OVER ------------------------------------------------------------
     void gameOver() {
         // Get bestScore
@@ -538,11 +535,6 @@ public class GameBoardSan extends AppCompatActivity implements View.OnClickListe
         // Go to Game Over Activity
         startActivity(new Intent(GameBoardSan.this, GameOver.class));
     }
-
-
-
-
-
 
 
     // MARK: - PLAY SOUND --------------------------------------------------------

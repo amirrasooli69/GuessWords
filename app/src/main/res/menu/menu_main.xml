@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="فارسی" android:id="@+id/menuFa" />
+    <item android:title="مازندرانی" android:id="@+id/menuMaz"/>
+    <item android:title="سمنانی" >
+        <menu >
+            <item android:title="سمنانی" android:id="@+id/menuSem"/>
+            <item android:title="سنگسری" android:id="@+id/menuSan"/>
+        </menu>
+    </item>
+
+</menu>

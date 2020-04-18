@@ -5,25 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f0eca2"
+    android:background="#9D88C1"
     tools:context=".GameBoardFa"
     android:layoutDirection="rtl">
 
 
-    <Button
-        android:id="@+id/btnDelete"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/circle_corner_red"
-        android:text=">"
 
-        android:textAllCaps="false"
-        android:textColor="@android:color/background_dark"
-        android:textSize="25sp"
-        android:onClick="btnHintClick"
-        />
 
     <Button
         android:id="@+id/gbBackButt"
@@ -33,6 +20,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/back_butt"/>
+
 
     <TextView
         android:id="@+id/gbScoreTxt"
@@ -79,6 +67,22 @@
         android:layout_marginTop="114dp"
         android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="7dp"
+            android:gravity="center_vertical|center_horizontal"
+
+            android:background="@drawable/circle_corner_red"
+            android:text=">"
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_dark"
+            android:textSize="25sp"
+            android:onClick="btnHintClick"
+            />
 
         <TextView
             android:id="@+id/letter1"
@@ -134,6 +138,20 @@
             android:gravity="center_vertical|center_horizontal"
             android:textColor="#fff"
             android:textSize="24sp" />
+        <!--Button
+            android:id="@+id/btnDelete"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/circle_corner_red"
+            android:text=">"
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_dark"
+            android:textSize="25sp"
+            android:onClick="btnHintClick"
+            /-->
 
     </LinearLayout>
 
@@ -156,22 +174,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/linearLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="37dp"
+        >
 
 
         <Button
             android:id="@+id/letterButt2"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_marginRight="70dp"
             android:layout_below="@+id/letterButt1"
+            android:layout_marginEnd="20dp"
             android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/letterButt1"
             android:background="@drawable/circle_corner_blue"
             android:text="B"
+            android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="#fff"
             android:textSize="30sp" />
+
         <Button
             android:id="@+id/letterButt1"
             android:layout_width="70dp"
@@ -187,41 +208,42 @@
             android:id="@+id/letterButt3"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/letterButt1"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:background="@drawable/circle_corner_blue"
             android:text="C"
             android:textAllCaps="false"
             android:textColor="#fff"
             android:textSize="30sp" />
+
         <Button
             android:id="@+id/letterButt5"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_below="@+id/letterButt3"
-            android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
             android:background="@drawable/circle_corner_blue"
             android:text="E"
             android:textAllCaps="false"
             android:textColor="#fff"
-            android:textSize="30sp"
-            />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/letterButt4"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_marginRight="220dp"
             android:layout_below="@+id/letterButt1"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/letterButt1"
             android:background="@drawable/circle_corner_blue"
             android:text="D"
+            android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="#fff"
             android:textSize="30sp" />
-
 
 
         <Button
@@ -230,15 +252,13 @@
             android:layout_height="66dp"
             android:layout_marginTop="320dp"
             android:layout_marginRight="5dp"
-            android:background="@drawable/circle_corner_blue"
-            android:text="راهنمایی"
+            android:background="@drawable/ico_help"
+            android:onClick="btnHintClick"
             android:textAllCaps="false"
             android:textColor="@android:color/background_dark"
             android:textSize="25sp"
-            android:onClick="btnHintClick"
 
             />
-
 
         <TextView
             android:id="@+id/goPossibleWordTxt"
@@ -251,15 +271,16 @@
             android:textColor="#fff"
             android:textSize="36sp"
             android:textStyle="bold" />
+
         <TextView
             android:id="@+id/txtHint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="320dp"
-            android:layout_marginRight="300dp"
-            android:textColor="#1B9820"
-            android:textSize="36sp"
-            android:textStyle="bold" />
+            android:layout_marginTop="330dp"
+            android:layout_marginRight="150dp"
+            android:textColor="#FFEB3B"
+            android:textSize="30sp"
+            />
 
     </RelativeLayout>
 

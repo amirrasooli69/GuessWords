@@ -133,7 +133,7 @@ public class GameBoardMaz extends AppCompatActivity implements View.OnClickListe
 
         // Get a List array of words
 
-        String [] wordsArr = getResources().getStringArray(R.array.WordsSan);
+        String [] wordsArr = getResources().getStringArray(R.array.WordsMaz);
         wordsArray = new ArrayList<String>(Arrays.asList(wordsArr));
         // Log.i("log-", "WORDS ARRAY: " + wordsArray);
 
